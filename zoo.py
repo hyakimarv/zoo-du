@@ -18,11 +18,36 @@
 # Tuto část dopiš
 
 #def pridej(zvire, pocet):
+global tygr
+global lev
+global opice
+pocet=0
+def pridej(zvire, pocet):
+    if zvire =="tygr":
+        tygr += pocet
+    elif zvire =="lev":
+        lev += pocet
+    elif zvire == "opice":
+        opice +=pocet
+    else:
+        print("něco si udělal špatně")
     
 #def odeber(zvire, pocet):
+def odeber(zvire, pocet):
+    if zvire =="tygr":
+        tygr -= pocet
+    elif zvire =="lev":
+        lev -= pocet
+    elif zvire == "opice":
+        opice -=pocet
+    else:
+        print("něco si udělal špatně")
     
 #def vypis():
-    
+def vypis ():
+    print(f"tygri:{tygr}")
+    print(f"Lvy: {lev}")
+    print(f"opice:{opice}")    
 
 
 
@@ -30,8 +55,8 @@
 # Tuto část nepřepisovat
 
 # Počty zvířat v zoo
-tygri = 0
-lvy = 0
+tigr = 0
+lev = 0
 opice = 0
 
 # informace pro cyklus zda se má opakovat či ne
